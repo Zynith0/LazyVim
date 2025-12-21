@@ -211,19 +211,12 @@ map("n", "<leader><tab>[", "<cmd>tabprevious<cr>", { desc = "Previous Tab" })
 -- lua
 map({"n", "x"}, "<localleader>r", function() Snacks.debug.run() end, { desc = "Run Lua", ft = "lua" })
 
-local builtin = require("fzf-lua")
-vim.keymap.set("n", "<C-f>", builtin.files(), { desc = "Telescope find files" })
-vim.keymap.set("n", "<C-p>", builtin.git_files(), { desc = "Telescope find files" })
--- vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
--- vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
--- vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
--- vim.keymap.set("n", "<leader>h", builtin.highlights, { desc = "Telescope help tags" })
--- vim.keymap.set("n", "<leader>k", "<cmd>Explore<CR>")
---
-vim.keymap.set("n", "<C-d>", "<C-d>zz")
-vim.keymap.set("n", "<C-u>", "<C-u>zz")
+map("n", "<leader>k", "<cmd>Explore<CR>")
 
-vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
-vim.keymap.set("v", "<", "<gv")
-vim.keymap.set("v", ">", ">gv")
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
+
+map("v", "J", ":m '>+1<CR>gv=gv")
+map("v", "K", ":m '<-2<CR>gv=gv")
+map("v", "<", "<gv")
+map("v", ">", ">gv")
