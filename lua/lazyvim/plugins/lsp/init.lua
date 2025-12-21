@@ -298,25 +298,25 @@ return {
           end
         end
       end)
-      vim.lsp.enable("gopls")
-      vim.lsp.enable("pyright")
-      vim.lsp.enable("rust_analyzer")
-      vim.lsp.enable("ts_ls")
-      vim.lsp.enable("html")
-      vim.lsp.enable("tailwindcss")
-      vim.lsp.enable("zls")
-      vim.lsp.enable("bashls")
-      vim.lsp.enable("lua_ls")
-      vim.lsp.enable("elixirls")
-      vim.lsp.enable("clangd")
-      vim.lsp.enable("gleam")
-      vim.lsp.config["qmlls"] = {
-        cmd = { "qmlls6" },
-        filetypes = { "qml" },
-        root_markers = { ".git" },
-      }
-      vim.lsp.enable("qmlls")
-      vim.lsp.enable("hls")
+      -- vim.lsp.enable("gopls")
+      -- vim.lsp.enable("pyright")
+      -- vim.lsp.enable("rust_analyzer")
+      -- vim.lsp.enable("ts_ls")
+      -- vim.lsp.enable("html")
+      -- vim.lsp.enable("tailwindcss")
+      -- vim.lsp.enable("zls")
+      -- vim.lsp.enable("bashls")
+      -- vim.lsp.enable("lua_ls")
+      -- vim.lsp.enable("elixirls")
+      -- vim.lsp.enable("clangd")
+      -- vim.lsp.enable("gleam")
+      -- vim.lsp.config["qmlls"] = {
+      --   cmd = { "qmlls6" },
+      --   filetypes = { "qml" },
+      --   root_markers = { ".git" },
+      -- }
+      -- vim.lsp.enable("qmlls")
+      -- vim.lsp.enable("hls")
     end,
   },
 }
